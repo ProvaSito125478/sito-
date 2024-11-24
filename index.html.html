@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetrina Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .auto-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .auto-item {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+        }
+        .auto-item img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vetrina Auto</h1>
+        <p>Le migliori auto in vendita per te</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Benvenuto nel nostro showroom online!</h2>
+            <p>Scopri le auto in vendita e trova quella perfetta per te. Ogni veicolo è selezionato con cura per garantirti qualità e affidabilità.</p>
+        </section>
+
+        <section id="catalogo">
+            <h2>Le nostre auto in vendita</h2>
+            <div class="auto-list">
+                <div class="auto-item">
+                    <img src="https://via.placeholder.com/300" alt="Auto 1">
+                    <h3>Fiat Panda 2020</h3>
+                    <p>Prezzo: €10.000</p>
+                    <p>Descrizione breve della Fiat Panda 2020.</p>
+                </div>
+                <div class="auto-item">
+                    <img src="https://via.placeholder.com/300" alt="Auto 2">
+                    <h3>Ford Fiesta 2019</h3>
+                    <p>Prezzo: €12.500</p>
+                    <p>Descrizione breve della Ford Fiesta 2019.</p>
+                </div>
+                <div class="auto-item">
+                    <img src="https://via.placeholder.com/300" alt="Auto 3">
+                    <h3>Volkswagen Golf 2021</h3>
+                    <p>Prezzo: €15.000</p>
+                    <p>Descrizione breve della Volkswagen Golf 2021.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <h2>Contattaci</h2>
+            <p>Per maggiori informazioni o per acquistare una delle nostre auto, contattaci:</p>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="messaggio">Messaggio:</label><br>
+                <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
+                <input type="submit" value="Invia">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vetrina Auto | Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
